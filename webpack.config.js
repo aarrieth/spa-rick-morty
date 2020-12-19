@@ -1,5 +1,4 @@
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -10,6 +9,13 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js'],
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'src/index.js'),
+        compress: true,
+        port: 8080,
+        host: "127.0.0.1",
+        open: true
     },
     module: {
         rules: [{

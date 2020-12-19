@@ -4,8 +4,8 @@
   "description": "SPA on javascript using rick and morty API",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack serve"
+    "build": "webpack -p",
+    "dev": "webpack serve"
   },
   "keywords": [
     "SPA",
