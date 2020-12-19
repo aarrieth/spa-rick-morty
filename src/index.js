@@ -1,1 +1,4 @@
-console.log('Look ma... no hands!');
+import router from './routes/';
+
+window.addEventListener('load', router);
+window.addEventListener('hashchange', router);
